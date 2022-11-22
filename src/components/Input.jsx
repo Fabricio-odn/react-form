@@ -21,7 +21,7 @@ const Input = ({ label, id, tp, ...props }) => {
 
   return (
     <>
-      <label htmlFor={id}>{label ?? 'Digite seu e-mail'}</label>
+      <label htmlFor={id}>{label ?? 'Digite seu email'}</label>
       <InputComponent type={tp} id={id} value={form} onChange={handleChange} />
     </>
   );

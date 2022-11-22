@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 let ButtonComponent = styled.button`
   width: 415px;
@@ -11,6 +12,7 @@ let ButtonComponent = styled.button`
   font-size: 1.125rem;
   color: #fff;
   cursor: pointer;
+  text-shadow: 0 0 2px #000;
 `;
 
 const Button = ({ t, ...props }) => {
@@ -22,7 +24,7 @@ const Button = ({ t, ...props }) => {
   return (
     <>
       <ButtonComponent onClick={buttonSubmit}>
-        <a href="/">{t ?? 'ENTRAR'}</a>
+        <Link href="/">{t ?? 'ENTRAR'}</Link>
       </ButtonComponent>
     </>
   );

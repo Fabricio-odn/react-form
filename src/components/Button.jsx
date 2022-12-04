@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 let ButtonComponent = styled.button`
-  width: 415px;
+  width: 425px;
   height: 49px;
   border-radius: 5px;
   background: #f89427;
@@ -13,18 +13,28 @@ let ButtonComponent = styled.button`
   color: #fff;
   cursor: pointer;
   text-shadow: 0 0 2px #000;
+  border: none;
+
+  @media (max-width: 1440px) {
+    width: 380px;
+    height: 45px;
+  }
+
+  @media (max-width: 600px) {
+    width: 310px;
+    height: 39px;
+  }
 `;
 
 const Button = ({ t, ...props }) => {
   const buttonSubmit = (e) => {
     e.preventDefault();
-    console.log('Clicou');
   };
 
   return (
     <>
       <ButtonComponent onClick={buttonSubmit}>
-        <Link href="/">{t ?? 'ENTRAR'}</Link>
+        <Link to="/">{t ?? 'ENTRAR'}</Link>
       </ButtonComponent>
     </>
   );

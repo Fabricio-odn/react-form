@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
 body {
+  display: flex;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,4 +13,25 @@ body {
 a {
   text-decoration: none;
   color: #FFF;
+}
+
+.containerImg {
+  background: url(./assets/img/background.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.gradienteDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#010f1a, #072135) center no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (max-width: 767px) {
+  .containerImg {
+    display: none;
+  }
 }

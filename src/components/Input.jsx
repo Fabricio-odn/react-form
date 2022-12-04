@@ -10,6 +10,14 @@ let InputComponent = styled.input`
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 1rem;
+
+  @media (max-width: 1440px) {
+    width: 380px;
+  }
+
+  @media (max-width: 600px) {
+    width: 300px;
+  }
 `;
 
 const Input = ({ label, id, tp, ...props }) => {

@@ -17,7 +17,7 @@ let FormContainer = styled.form`
   box-shadow: 0 0 6px 0 #f89427;
 
   @media (max-width: 600px) {
-    padding: 12px;
+    padding: 20px;
     font-size: 0.9rem;
   }
 `;
@@ -33,7 +33,7 @@ let Links = styled.div`
   }
 
   @media (max-width: 600px) {
-    gap: 70px;
+    gap: 80px;
     padding-top: 10px;
   }
 `;

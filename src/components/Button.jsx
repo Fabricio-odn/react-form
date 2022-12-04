@@ -21,7 +21,7 @@ let ButtonComponent = styled.button`
   }
 
   @media (max-width: 600px) {
-    width: 310px;
+    width: 300px;
     height: 39px;
   }
 `;
